@@ -102,7 +102,7 @@ public class Board {
 		return false;
 	}
 
-	public Mark whoWon(){
+	public Mark whoWon() {
 		for (List<Square> line : getAllLines()) {
 			Square first = line.get(0);
 			if (!first.isEmpty() && line.stream().map(Square::getMark).distinct().count() == 1) {

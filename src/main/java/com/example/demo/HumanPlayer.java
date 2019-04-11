@@ -14,17 +14,17 @@ public class HumanPlayer extends Player {
 	}
 
 
-	public Point2D readTurnFromConsole(Board board){
+	public Point2D readTurnFromConsole(Board board) {
 		String input;
 		Point2D move;
 		System.out.println("Please make a turn");
-		while (true){
+		while (true) {
 			input = sc.next().toLowerCase();
-			if (!board.isValidMoveRepresentation(input)){
+			if (!board.isValidMoveRepresentation(input)) {
 				System.out.println(NOT_VALID_INPUT);
 			} else {
 				move = board.parseStringToPoint(input);
-				if (board.isPossibleMove(move)){
+				if (board.isPossibleMove(move)) {
 					return move;
 				} else {
 					System.out.println(String.format("The Square %s is already taken", input));

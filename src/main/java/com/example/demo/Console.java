@@ -14,8 +14,8 @@ public class Console {
 	public static void main(String[] args) {
 		do {
 			playHumanVsAlgorithmGame();
-//			playHumanVsHuman();
-//			playAlgorithmVsAlgorithmGame();
+			//			playAlgorithmVsAlgorithmGame();
+			//			playHumanVsHuman();
 			System.out.println("Do you want to play another game? [y/n]");
 		} while (scanner.next().toLowerCase().equals("y"));
 	}
